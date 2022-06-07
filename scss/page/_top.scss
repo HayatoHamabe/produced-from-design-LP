@@ -1,0 +1,125 @@
+@use "../mixins" as m;
+@use "../setting" as s;
+
+.hero {
+  max-width: s.$layout-width;
+  margin: 0 auto;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 261px 20px 155px;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url("../../img/ellipse.png");
+      height: 711px;
+      width: 708px;
+      position: absolute;
+      z-index: -1;
+      top: -2%;
+      right: -31.5%;
+    }
+  }
+  &__title {
+    @include m.font-size(32);
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+}
+
+.feature {
+  max-width: s.$layout-width;
+  margin: 0 auto;
+  &__heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__title {
+    @include m.font-size(32);
+    font-weight: 800;
+  }
+  &__subtitle {
+    @include m.font-size(16);
+    color: s.$color-subtitle;
+  }
+}
+
+.price {
+  background-color: s.$bg-primary;
+  padding: 60px 0;
+  &__inner {
+    max-width: s.$layout-width;
+    margin: 0 auto;
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__title {
+    @include m.font-size(32);
+    font-weight: 800;
+  }
+  &__subtitle {
+    @include m.font-size(16);
+    color: s.$color-subtitle;
+  }
+  &__table {
+    background-color: #fff;
+    max-width: 926px;
+    border-collapse: collapse;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 100%;
+    margin: 0 auto 20px;
+    td {
+      border: 1px solid #e5e5e5;
+      @include m.font-size(16);
+      padding: 30px 20px;
+      &:first-child {
+        width: 33%;
+      }
+    }
+  }
+  &__text {
+    text-align: center;
+  }
+}
+
+.faq {
+  padding: 60px 0;
+  &__inner {
+    max-width: s.$layout-width;
+    margin: 0 auto;
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__title {
+    @include m.font-size(32);
+    font-weight: 800;
+  }
+  &__subtitle {
+    @include m.font-size(16);
+    color: s.$color-subtitle;
+  }
+  &__list {
+    max-width: 926px;
+    margin: 0 auto;
+  }
+  &__question {
+    text-align: center;
+    @include m.font-size(14);
+    padding: 20px 0;
+    border: 1px solid #e5e5e5;
+  }
+  &__answer {
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background-color: #f2f2f2;
+    padding: 20px 30px;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../mixins" as m;
+@use "../setting" as s;
+
+.card {
+  margin-bottom: 60px;
+  &__title {
+    text-align: center;
+    @include m.font-size(28);
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__body-reverse {
+    flex-direction: row-reverse;
+  }
+  &__content-heading {
+    @include m.font-size(24);
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+}

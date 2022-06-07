@@ -1,0 +1,12 @@
+@use "../mixins" as m;
+@use "../setting" as s;
+
+.contact-button {
+  &__link {
+    background-image: s.$bg-contact;
+    color: #fff;
+    @include m.font-size(14);
+    border-radius: 10px;
+    padding: 10px 36px;
+  }
+}

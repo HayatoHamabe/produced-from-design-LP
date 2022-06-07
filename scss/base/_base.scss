@@ -1,0 +1,29 @@
+@use "../mixins" as m;
+@use "../setting" as s;
+
+html {
+  // ユーザーがブラウザで指定した文字サイズに合わせる
+  font-size: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  color: s.$color-text;
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
+  @include m.font-size(15);
+  @include m.mq(md) {
+    @include m.font-size(14);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: s.$color-text;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
