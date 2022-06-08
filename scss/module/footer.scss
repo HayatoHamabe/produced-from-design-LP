@@ -1,0 +1,21 @@
+@use "../mixins" as m;
+@use "../setting" as s;
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  &__heading {
+    @include m.font-size(24);
+    margin-bottom: 30px;
+  }
+  &__polisy {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 59px;
+    @include m.font-size(16);
+  }
+  &__copyright {
+    @include m.font-size(14);
+  }
+}

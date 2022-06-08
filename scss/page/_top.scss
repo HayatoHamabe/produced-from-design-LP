@@ -1,6 +1,9 @@
 @use "../mixins" as m;
 @use "../setting" as s;
 
+.top {
+  font-weight: bold;
+}
 .hero {
   max-width: s.$layout-width;
   margin: 0 auto;
@@ -16,6 +19,7 @@
       height: 711px;
       width: 708px;
       position: absolute;
+      overflow-x: hidden;
       z-index: -1;
       top: -2%;
       right: -31.5%;
@@ -23,7 +27,7 @@
   }
   &__title {
     @include m.font-size(32);
-    font-weight: 800;
+
     margin-bottom: 30px;
   }
   &__text {
@@ -36,11 +40,10 @@
   margin: 0 auto;
   &__heading {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
   &__title {
     @include m.font-size(32);
-    font-weight: 800;
   }
   &__subtitle {
     @include m.font-size(16);
@@ -50,18 +53,17 @@
 
 .price {
   background-color: s.$bg-primary;
-  padding: 60px 0;
+  padding: 63px 0;
   &__inner {
     max-width: s.$layout-width;
     margin: 0 auto;
   }
   &__heading {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
   &__title {
     @include m.font-size(32);
-    font-weight: 800;
   }
   &__subtitle {
     @include m.font-size(16);
@@ -89,18 +91,17 @@
 }
 
 .faq {
-  padding: 60px 0;
+  padding: 63px 0;
   &__inner {
     max-width: s.$layout-width;
     margin: 0 auto;
   }
   &__heading {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
   &__title {
     @include m.font-size(32);
-    font-weight: 800;
   }
   &__subtitle {
     @include m.font-size(16);
@@ -113,13 +114,87 @@
   &__question {
     text-align: center;
     @include m.font-size(14);
-    padding: 20px 0;
+    padding: 20px 30px;
     border: 1px solid #e5e5e5;
+    cursor: pointer;
   }
   &__answer {
+    display: none;
+    @include m.font-size(14);
     border-right: 1px solid #e5e5e5;
     border-left: 1px solid #e5e5e5;
     background-color: #f2f2f2;
     padding: 20px 30px;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.blog {
+  padding: 63px 0;
+  background-color: s.$bg-primary;
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 63px;
+  }
+  &__title {
+    @include m.font-size(32);
+  }
+  &__subtitle {
+    @include m.font-size(16);
+    color: s.$color-subtitle;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.works {
+  padding: 63px 0;
+  &__inner {
+    margin: 0 auto;
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 63px;
+  }
+  &__title {
+    @include m.font-size(32);
+  }
+  &__subtitle {
+    @include m.font-size(16);
+    color: s.$color-subtitle;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(90deg, #05a5fa, #67ffd6);
+  padding: 72px 0;
+  &__inner {
+    margin: 0 auto;
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  &__title {
+    @include m.font-size(32);
+
+    color: #fff;
+  }
+  &__subtitle {
+    @include m.font-size(16);
+    color: #fff;
+  }
+  &__lead {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 44px;
   }
 }
