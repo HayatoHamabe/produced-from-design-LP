@@ -5,6 +5,7 @@
   box-shadow: 0px 3px 6px #00000029;
   background-color: #fff;
   font-weight: bold;
+  height: 94px;
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -12,8 +13,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 24px 0 24px 24px;
+    height: 100%;
+    padding-left: 24px;
     max-width: s.$layout-width;
     margin: 0 auto;
   }
@@ -27,5 +28,10 @@
   }
   &__title {
     @include m.font-size(24);
+  }
+  &__contact {
+    @include m.mq(md) {
+      display: none;
+    }
   }
 }
