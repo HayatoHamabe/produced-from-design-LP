@@ -10,9 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/favicon.ico" id="favicon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>ユアコーディング</title>
@@ -45,167 +50,381 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero__inner">
-        <div class="hero__heading">
-          <div class="hero__title">
-            コーディングの手間を<br />最小に、デザインに注力<br />する助けに
-          </div>
-          <div class="hero__text">
-            ユアコーディングはコーディングに<br />
-            特化したフリーランス<br />
-            デザインに注力されたい方の<br />
-            助けになります
-          </div>
-          <div class="contact-button">
-            <a href="#contact" class="contact-button__link">お問い合わせ</a>
-          </div>
-        </div>
-        <div class="hero__body">
-          <div class="hero__img-wrapper">
-            <img src="./img/manager.png" alt="" class="hero-img" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="feature">
-      <div class="feature__inner">
-        <div class="feature__heading">
-          <div class="feature__title">ユアコーディング3つの特徴</div>
-          <span class="feature__subtitle">FEATURES</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card__title">高速コーディング</div>
-        <div class="card__body">
-          <div class="card__img-wrapper">
-            <img src="./img/cto.png" alt="" class="card__img" />
-          </div>
-          <div class="card__content">
-            <div class="card__content-heading">
-              コーディングに特化したフリーランスのため、<br />
-              スピード感を持った開発が可能。
+    <main class="top">
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__heading">
+            <div class="hero__title">
+              コーディングの手間を<br />最小に、デザインに注力<br />する助けに
             </div>
-            <div class="card__content-text">
-              開発は常にスピードとの勝負です。<br />
-              ユアコーディングはコーディングに特化しているため、<br />
-              素早く納品することで、クライアントがデザインに注力<br />
-              する助けとなります。
+            <div class="hero__text">
+              ユアコーディングはコーディングに<br />
+              特化したフリーランス<br />
+              デザインに注力されたい方の<br />
+              助けになります
+            </div>
+            <div class="contact-button">
+              <a href="#contact" class="contact-button__link">お問い合わせ</a>
+            </div>
+          </div>
+          <div class="hero__body">
+            <div class="hero__img-wrapper">
+              <img src="./img/manager.png" alt="" class="hero-img" />
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card__title">高品質</div>
-        <div class="card__body card__body-reverse">
-          <div class="card__img-wrapper">
-            <img src="./img/building_website.png" alt="" class="card__img" />
-          </div>
-          <div class="card__content">
-            <div class="card__content-heading">
-              正しいマークアップで、<br />
-              内部SEOに強いコーディングを<br />
-              デフォルトで行います。
-            </div>
-            <div class="card__content-text">
-              ユアコーディングでは、「予測しやすい」「再利用しやすい」<br />
-              「保守しやすい」「拡張しやすい」と言った設計をもとに<br />
-              きちんとコーディングを行うため、納品後も安心です。
-            </div>
+      </section>
+
+      <section class="feature">
+        <div class="feature__inner">
+          <div class="feature__heading">
+            <div class="feature__title">ユアコーディング3つの特徴</div>
+            <span class="feature__subtitle">FEATURES</span>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card__title">迅速なレスポンス</div>
-        <div class="card__body">
-          <div class="card__img-wrapper">
-            <img src="./img/new_message.png" alt="" class="card__img" />
-          </div>
-          <div class="card__content">
-            <div class="card__content-heading">
-              原則いただいたメッセージは、<br />
-              業務時間内であれば6時間以内に<br />
-              お返しいたします。
+
+        <div class="feature-card">
+          <div class="feature-card__title">高速コーディング</div>
+          <div class="feature-card__body">
+            <div class="feature-card__img-wrapper">
+              <img src="./img/cto.png" alt="" class="feature-card__img" />
             </div>
-            <div class="card__content-text">
-              連絡を返さないフリーランスが多い中、<br />
-              ユアコーディングでは定期的な進捗報告など、<br />
-              社会人としての基本を踏まえて仕事を行なって おります。
+            <div class="feature-card__content">
+              <div class="feature-card__content-heading">
+                コーディングに特化したフリーランスのため、<br />
+                スピード感を持った開発が可能。
+              </div>
+              <div class="feature-card__content-text">
+                開発は常にスピードとの勝負です。<br />
+                ユアコーディングはコーディングに特化しているため、<br />
+                素早く納品することで、クライアントがデザインに注力<br />
+                する助けとなります。
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="price">
-      <div class="price__inner">
-        <div class="price__heading">
-          <div class="price__title">価格</div>
-          <span class="price__subtitle">PRICE</span>
-        </div>
-
-        <div class="price__body">
-          <table class="price__table">
-            <tbody>
-              <tr>
-                <td>HTMLコーディングトップページ</td>
-                <td>30.000円〜</td>
-              </tr>
-              <tr>
-                <td>HTMLコーディング下層1ページ</td>
-                <td>10.000円〜</td>
-              </tr>
-              <tr>
-                <td>HTML+WordPressトップページ</td>
-                <td>55.000円〜</td>
-              </tr>
-              <tr>
-                <td>HTML+WordPress下層1ページ</td>
-                <td>15.000円〜</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="price__text">
-            ＊詳細な価格はページや仕様によって異なります
+        <div class="feature-card">
+          <div class="feature-card__title">高品質</div>
+          <div class="feature-card__body feature-card__body-reverse">
+            <div class="feature-card__img-wrapper">
+              <img
+                src="./img/building_website.png"
+                alt=""
+                class="feature-card__img"
+              />
+            </div>
+            <div class="feature-card__content">
+              <div class="feature-card__content-heading">
+                正しいマークアップで、<br />
+                内部SEOに強いコーディングを<br />
+                デフォルトで行います。
+              </div>
+              <div class="feature-card__content-text">
+                ユアコーディングでは、「予測しやすい」「再利用しやすい」<br />
+                「保守しやすい」「拡張しやすい」と言った設計をもとに<br />
+                きちんとコーディングを行うため、納品後も安心です。
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="faq">
-      <div class="faq__inner">
-        <div class="faq__heading">
-          <div class="faq__title">よくある質問</div>
-          <span class="faq__subtitle">FAQ</span>
+        <div class="feature-card">
+          <div class="feature-card__title">迅速なレスポンス</div>
+          <div class="feature-card__body">
+            <div class="feature-card__img-wrapper">
+              <img
+                src="./img/new_message.png"
+                alt=""
+                class="feature-card__img"
+              />
+            </div>
+            <div class="feature-card__content">
+              <div class="feature-card__content-heading">
+                原則いただいたメッセージは、<br />
+                業務時間内であれば6時間以内に<br />
+                お返しいたします。
+              </div>
+              <div class="feature-card__content-text">
+                連絡を返さないフリーランスが多い中、<br />
+                ユアコーディングでは定期的な進捗報告など、<br />
+                社会人としての基本を踏まえて仕事を行なって おります。
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <dl class="faq__list">
-          <dt class="faq__question">
-            デザインから一貫してお願いすることは可能でしょうか
-          </dt>
-          <dd class="faq__answer active">
-            ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br />
-            ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
-          </dd>
+      <section class="price">
+        <div class="price__inner">
+          <div class="price__heading">
+            <div class="price__title">価格</div>
+            <span class="price__subtitle">PRICE</span>
+          </div>
 
-          <dt class="faq__question">
-            WordPressのカスタマイズをお願いすることも可能でしょうか？
-          </dt>
-          <dd class="faq__answer">
-            可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
-          </dd>
+          <div class="price__body">
+            <table class="price__table">
+              <tbody>
+                <tr>
+                  <td>HTMLコーディングトップページ</td>
+                  <td>30.000円〜</td>
+                </tr>
+                <tr>
+                  <td>HTMLコーディング下層1ページ</td>
+                  <td>10.000円〜</td>
+                </tr>
+                <tr>
+                  <td>HTML+WordPressトップページ</td>
+                  <td>55.000円〜</td>
+                </tr>
+                <tr>
+                  <td>HTML+WordPress下層1ページ</td>
+                  <td>15.000円〜</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="price__text">
+              ＊詳細な価格はページや仕様によって異なります
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <dt class="faq__question">コーディングのスピード感が知りたい</dt>
-          <dd class="faq__answer">
-            HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br
-              class="pc-only"
-            />
-            なります。
-          </dd>
-        </dl>
+      <section class="faq">
+        <div class="faq__inner">
+          <div class="faq__heading">
+            <div class="faq__title">よくある質問</div>
+            <span class="faq__subtitle">FAQ</span>
+          </div>
+
+          <dl class="faq__list">
+            <dt class="faq__question">
+              デザインから一貫してお願いすることは可能でしょうか
+            </dt>
+            <dd class="faq__answer active">
+              ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br />
+              ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+            </dd>
+
+            <dt class="faq__question">
+              WordPressのカスタマイズをお願いすることも可能でしょうか？
+            </dt>
+            <dd class="faq__answer">
+              可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
+            </dd>
+
+            <dt class="faq__question">コーディングのスピード感が知りたい</dt>
+            <dd class="faq__answer">
+              HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br
+                class="pc-only"
+              />
+              なります。
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="blog__inner">
+          <div class="blog__heading">
+            <div class="blog__title">ブログ</div>
+            <span class="blog__subtitle">BLOG</span>
+          </div>
+
+          <div class="blog__body">
+            <div class="card">
+              <div class="card__img-wrapper">
+                <img
+                  src="./img/austin-distel-wawEfYdpkag-unsplash.png"
+                  alt=""
+                  class="card__img"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">サイトをリニューアルオープンしました。</p>
+                <time datetime="2020-01-23" class="card__time">2020.01.23</time>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__img-wrapper">
+                <img
+                  src="./img/dylan-gillis-KdeqA3aTnBY-unsplash.png"
+                  alt=""
+                  class="card__img"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました
+                </p>
+                <time datetime="2020-01-23" class="card__time">2020.01.23</time>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__img-wrapper">
+                <img
+                  src="./img/brooke-cagle-g1Kr4Ozfoac-unsplash.png"
+                  alt=""
+                  class="card__img"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">サイトをリニューアルオープンしました。</p>
+                <time datetime="2020-01-23" class="card__time">2020.01.23</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="works__inner">
+          <div class="works__heading">
+            <div class="works__title">制作実績</div>
+            <span class="works__subtitle">WORKS</span>
+          </div>
+
+          <div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper__img-wrapper">
+                    <img
+                      src="/img/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png"
+                      alt=""
+                      class="swiper__img"
+                    />
+                  </div>
+                  <div class="swiper__body">
+                    <div class="swiper__title">
+                      コーディングカンファレンスのイベントLPの制作を行いました！
+                    </div>
+                    <div class="swiper__text">
+                      採用技術：jQuery,WordPress<br />
+                      実装期間：4週間<br />
+                      担当コーダー：石井
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__img-wrapper">
+                    <img
+                      src="/img/digital-marketing-1.png"
+                      alt=""
+                      class="swiper__img"
+                    />
+                  </div>
+                  <div class="swiper__body">
+                    <div class="swiper__title">
+                      株式会社サンプル様採用サイトのコーディングを行いました！
+                    </div>
+                    <div class="swiper__text">
+                      採用技術：jQuery,Bootstrap4<br />
+                      実装期間：2週間<br />
+                      担当コーダー：石井
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__img-wrapper">
+                    <img
+                      src="/img/hal-gatewood-tZc3vjPCk-Q-unsplash.png"
+                      alt=""
+                      class="swiper__img"
+                    />
+                  </div>
+                  <div class="swiper__body">
+                    <div class="swiper__title">
+                      株式会社サンプル様通販サイトのコーディングを行いました！
+                    </div>
+                    <div class="swiper__text">
+                      採用技術：jQuery,Bootstrap4 <br />
+                      実装期間：6週間<br />
+                      担当コーダー：石井
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__inner">
+          <div class="contact__heading">
+            <div class="contact__title">お問い合わせ</div>
+            <span class="contact__subtitle">CONTACT</span>
+          </div>
+          <div class="contact__lead">
+            コーディングの人出が足りないとき、<br />あなたの力になります
+          </div>
+
+          <div class="contact__form">
+            <form action="post" class="form">
+              <div class="form__item">
+                <label for="name" class="form__label"
+                  >お名前<span class="form__require">必須</span></label
+                >
+                <input type="text" class="form__input" name="name" id="name" />
+              </div>
+              <div class="form__item">
+                <label for="email" class="form__label"
+                  >メールアドレス<span class="form__require">必須</span></label
+                >
+                <input
+                  type="email"
+                  class="form__input"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="form__item">
+                <label for="contact-text-area" class="form__label"
+                  >お問い合わせ内容<span class="form__require"
+                    >必須</span
+                  ></label
+                >
+                <textarea
+                  name="contact-text-area"
+                  id="form-text-area"
+                  class="form__text-area"
+                ></textarea>
+              </div>
+              <div class="form__checkbox-wrapper">
+                <input type="checkbox" class="form__checkbox" />
+                プライバシーポリシーに同意する
+              </div>
+              <div class="form__button-wrapper">
+                <div class="contact-button">
+                  <input
+                    type="submit"
+                    class="contact-button__link"
+                    value="送信する"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__heading">ユアコーディング</div>
+        <div class="footer__polisy">
+          <div class="footer__polisy--left">プライバシーポリシー</div>
+          <div class="footer__polisy--right">個人商取引法に基づく表記</div>
+        </div>
+        <div class="footer__copyright">
+          <small>&copy;</small>ユアコーディング, All Rights Reserved.
+        </div>
       </div>
-    </section>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

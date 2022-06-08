@@ -4,6 +4,7 @@
 .header {
   box-shadow: 0px 3px 6px #00000029;
   background-color: #fff;
+  font-weight: bold;
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -11,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
+
     padding: 24px 0 24px 24px;
     max-width: s.$layout-width;
     margin: 0 auto;
