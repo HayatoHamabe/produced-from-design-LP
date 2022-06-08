@@ -13,6 +13,10 @@
     justify-content: space-between;
     padding: 261px 20px 155px;
     position: relative;
+    @include m.mq(md) {
+      flex-direction: column-reverse;
+      padding: 100px 15px;
+    }
     &::before {
       content: "";
       background-image: url("../../img/ellipse.png");
@@ -25,6 +29,11 @@
       right: -31.5%;
     }
   }
+  &__heading {
+    @include m.mq(md) {
+      text-align: center;
+    }
+  }
   &__title {
     @include m.font-size(32);
 
@@ -32,6 +41,17 @@
   }
   &__text {
     margin-bottom: 30px;
+  }
+  &__img-wrapper {
+    @include m.mq(md) {
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
+  &__img {
+    @include m.mq(md) {
+      height: 100%;
+    }
   }
 }
 
@@ -54,6 +74,9 @@
 .price {
   background-color: s.$bg-primary;
   padding: 63px 0;
+  @include m.mq(md) {
+    padding: 63px 15px;
+  }
   &__inner {
     max-width: s.$layout-width;
     margin: 0 auto;
@@ -110,6 +133,9 @@
   &__list {
     max-width: 926px;
     margin: 0 auto;
+    @include m.mq(md) {
+      padding: 0 15px;
+    }
   }
   &__question {
     text-align: center;
@@ -152,6 +178,9 @@
   &__body {
     display: flex;
     justify-content: space-around;
+    @include m.mq(md) {
+      display: block;
+    }
   }
 }
 
@@ -176,6 +205,9 @@
 .contact {
   background-image: linear-gradient(90deg, #05a5fa, #67ffd6);
   padding: 72px 0;
+  @include m.mq(md) {
+    padding: 72px 15px;
+  }
   &__inner {
     margin: 0 auto;
   }
