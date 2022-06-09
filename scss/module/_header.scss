@@ -9,9 +9,6 @@
   z-index: 10;
   position: fixed;
   width: 100%;
-  @include m.mq(md) {
-    max-width: 768px;
-  }
   &__inner {
     display: flex;
     justify-content: space-between;

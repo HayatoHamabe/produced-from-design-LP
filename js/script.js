@@ -95,15 +95,10 @@ $("#js-submit").on("click", function () {
     $("#form-privacy").addClass("polisy-err");
     errors += 1;
   }
-
+  $(window).scrollTop($("#contact").position().top);
   if (errors !== 0) {
     return false;
   }
 });
 
-// errCheck = () => {
-//   const name = document.getElementById("name");
-//   const email = document.getElementById("email");
-//   line.classList.toggle("is-active");
-//   nav.classList.toggle("is-show");
-// };
+$("form").submit(function () {});
