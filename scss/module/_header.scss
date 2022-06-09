@@ -8,7 +8,8 @@
   height: 94px;
   z-index: 10;
   position: fixed;
-  width: 100%;
+  right: 0;
+  left: 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -28,6 +29,9 @@
   }
   &__title {
     @include m.font-size(24);
+    @include m.mq(md) {
+      @include m.font-size(18);
+    }
   }
   &__contact {
     @include m.mq(md) {

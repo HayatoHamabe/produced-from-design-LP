@@ -16,7 +16,7 @@
     justify-content: space-between;
     max-width: s.$layout-width;
     position: relative;
-    padding: 131px 0 113px;
+    padding: 131px 24px 113px;
     margin: 0 auto;
     @include m.mq(md) {
       flex-direction: column-reverse;
@@ -51,6 +51,9 @@
 .feature {
   max-width: s.$layout-width;
   margin: 0 auto;
+  &__inner {
+    padding: 0 24px;
+  }
   &__heading {
     text-align: center;
     margin-bottom: 63px;
@@ -75,6 +78,7 @@
   }
   &__inner {
     max-width: s.$layout-width;
+    padding: 0 24px;
     margin: 0 auto;
   }
   &__heading {
@@ -212,7 +216,7 @@
 
 .contact {
   background-image: linear-gradient(90deg, #05a5fa, #67ffd6);
-  padding: 72px 0;
+  padding: 72px 24px;
   @include m.mq(md) {
     padding: 72px 15px;
   }
