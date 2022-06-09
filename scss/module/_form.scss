@@ -6,6 +6,13 @@
   max-width: 908px;
   margin: 0 auto;
   padding: 34px 63px;
+  cursor: auto;
+  @include m.mq(md) {
+    padding: 34px 20px;
+  }
+  label {
+    cursor: pointer;
+  }
   &__item {
     &.name-err {
       &::after {
@@ -42,6 +49,9 @@
     border-radius: 10px;
     padding: 4px 16px;
     margin-left: 23px;
+    @include m.mq(md) {
+      @include m.font-size(14);
+    }
   }
   &__input {
     display: block;

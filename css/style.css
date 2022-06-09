@@ -356,7 +356,8 @@ img {
   height: 94px;
   z-index: 10;
   position: fixed;
-  width: 100%;
+  right: 0;
+  left: 0;
 }
 .header__inner {
   display: flex;
@@ -378,6 +379,12 @@ img {
 .header__title {
   font-size: 24px;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__contact {
@@ -536,6 +543,15 @@ img {
   max-width: 908px;
   margin: 0 auto;
   padding: 34px 63px;
+  cursor: auto;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 34px 20px;
+  }
+}
+.form label {
+  cursor: pointer;
 }
 .form__item.name-err::after {
   color: #ff0000;
@@ -566,6 +582,12 @@ img {
   border-radius: 10px;
   padding: 4px 16px;
   margin-left: 23px;
+}
+@media screen and (max-width: 768px) {
+  .form__require {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
 }
 .form__input {
   display: block;
@@ -645,7 +667,6 @@ img {
     height: 40px;
     padding: 5px;
     border-radius: 5px;
-    margin-right: 24px;
   }
 }
 
@@ -705,7 +726,7 @@ img {
   justify-content: space-between;
   max-width: 1022px;
   position: relative;
-  padding: 131px 0 113px;
+  padding: 131px 24px 113px;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -743,6 +764,9 @@ img {
   max-width: 1022px;
   margin: 0 auto;
 }
+.feature__inner {
+  padding: 0 24px;
+}
 .feature__heading {
   text-align: center;
   margin-bottom: 63px;
@@ -771,6 +795,7 @@ img {
 }
 .price__inner {
   max-width: 1022px;
+  padding: 0 24px;
   margin: 0 auto;
 }
 .price__heading {
@@ -922,7 +947,7 @@ img {
 
 .contact {
   background-image: linear-gradient(90deg, #05a5fa, #67ffd6);
-  padding: 72px 0;
+  padding: 72px 24px;
 }
 @media screen and (max-width: 768px) {
   .contact {
