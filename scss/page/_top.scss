@@ -5,28 +5,22 @@
   font-weight: bold;
 }
 .hero {
-  max-width: s.$layout-width;
-  margin: 0 auto;
+  padding-top: 94px;
+  position: relative;
+  background-image: url("../../img/ellipse.png");
+  background-size: 708px 711px;
+  background-position: 120% -50%;
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 261px 20px 155px;
+    max-width: s.$layout-width;
     position: relative;
+    padding: 131px 0 113px;
+    margin: 0 auto;
     @include m.mq(md) {
       flex-direction: column-reverse;
       padding: 100px 15px;
-    }
-    &::before {
-      content: "";
-      background-image: url("../../img/ellipse.png");
-      height: 711px;
-      width: 708px;
-      position: absolute;
-      overflow-x: hidden;
-      z-index: -1;
-      top: -2%;
-      right: -31.5%;
     }
   }
   &__heading {
@@ -36,11 +30,10 @@
   }
   &__title {
     @include m.font-size(32);
-
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: 39px;
   }
   &__img-wrapper {
     @include m.mq(md) {
@@ -63,9 +56,12 @@
     margin-bottom: 63px;
   }
   &__title {
+    line-height: 1;
+    margin-bottom: 19px;
     @include m.font-size(32);
   }
   &__subtitle {
+    line-height: 1;
     @include m.font-size(16);
     color: s.$color-subtitle;
   }
@@ -86,9 +82,12 @@
     margin-bottom: 63px;
   }
   &__title {
+    line-height: 1;
+    margin-bottom: 19px;
     @include m.font-size(32);
   }
   &__subtitle {
+    line-height: 1;
     @include m.font-size(16);
     color: s.$color-subtitle;
   }
@@ -124,9 +123,12 @@
     margin-bottom: 63px;
   }
   &__title {
+    line-height: 1;
+    margin-bottom: 19px;
     @include m.font-size(32);
   }
   &__subtitle {
+    line-height: 1;
     @include m.font-size(16);
     color: s.$color-subtitle;
   }
@@ -169,9 +171,12 @@
     margin-bottom: 63px;
   }
   &__title {
+    line-height: 1;
+    margin-bottom: 19px;
     @include m.font-size(32);
   }
   &__subtitle {
+    line-height: 1;
     @include m.font-size(16);
     color: s.$color-subtitle;
   }
@@ -194,9 +199,12 @@
     margin-bottom: 63px;
   }
   &__title {
+    line-height: 1;
+    margin-bottom: 19px;
     @include m.font-size(32);
   }
   &__subtitle {
+    line-height: 1;
     @include m.font-size(16);
     color: s.$color-subtitle;
   }
@@ -216,11 +224,14 @@
     margin-bottom: 36px;
   }
   &__title {
+    line-height: 1;
+    margin-bottom: 19px;
     @include m.font-size(32);
 
     color: #fff;
   }
   &__subtitle {
+    line-height: 1;
     @include m.font-size(16);
     color: #fff;
   }

@@ -9,12 +9,15 @@
   z-index: 10;
   position: fixed;
   width: 100%;
+  @include m.mq(md) {
+    max-width: 768px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding-left: 24px;
+    padding: 0 24px;
     max-width: s.$layout-width;
     margin: 0 auto;
   }
@@ -32,6 +35,12 @@
   &__contact {
     @include m.mq(md) {
       display: none;
+    }
+  }
+  &__hamburger {
+    display: none;
+    @include m.mq(md) {
+      display: block;
     }
   }
 }
