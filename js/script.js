@@ -53,3 +53,57 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+// $(document).ready(function () {
+//   const $submitBtn = $("#js-submit");
+//   $("#form input,#form textarea").on("change", function () {
+//     if (
+//       $('#form input[type="text"]').val() !== "" &&
+//       $('#form input[type="email"]').val() !== "" &&
+//       $('#form input[type="checkbox"]').val() !== "" &&
+//       $("#form #privacyCheck").prop("checked") === true
+//     ) {
+//       $submitBtn.prop("disabled", false);
+//     } else {
+//       $submitBtn.prop("disabled", true);
+//     }
+//   });
+// });
+
+$("#js-submit").on("click", function () {
+  let errors = 0;
+
+  $("#form-name").removeClass("name-err");
+  $("#form-email").removeClass("email-err");
+  $("#form-contact").removeClass("contact-err");
+  $("#form-privacy").removeClass("polisy-err");
+
+  if ($("#name").val() == "") {
+    $("#form-name").addClass("name-err");
+    errors += 1;
+  }
+  if ($("#email").val() == "") {
+    $("#form-email").addClass("email-err");
+    errors += 1;
+  }
+  if ($("#form-textarea").val() == "") {
+    $("#form-contact").addClass("contact-err");
+    errors += 1;
+  }
+  if (!$("#privacy").prop("checked")) {
+    console.log("privacy");
+    $("#form-privacy").addClass("polisy-err");
+    errors += 1;
+  }
+
+  if (errors !== 0) {
+    return false;
+  }
+});
+
+// errCheck = () => {
+//   const name = document.getElementById("name");
+//   const email = document.getElementById("email");
+//   line.classList.toggle("is-active");
+//   nav.classList.toggle("is-show");
+// };
