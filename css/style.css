@@ -358,11 +358,6 @@ img {
   position: fixed;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .header {
-    max-width: 768px;
-  }
-}
 .header__inner {
   display: flex;
   justify-content: space-between;
