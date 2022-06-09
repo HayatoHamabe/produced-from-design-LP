@@ -542,6 +542,24 @@ img {
   margin: 0 auto;
   padding: 34px 63px;
 }
+.form__item.name-err::after {
+  color: #ff0000;
+  content: "お名前を入力してください";
+  top: -10px;
+  position: relative;
+}
+.form__item.email-err::after {
+  color: #ff0000;
+  content: "メールアドレスを正しく入力してください";
+  top: -10px;
+  position: relative;
+}
+.form__item.contact-err::after {
+  color: #ff0000;
+  content: "お問い合わせ内容を入力してください";
+  top: -10px;
+  position: relative;
+}
 .form__label {
   font-size: 16px;
   font-size: 1rem;
@@ -578,6 +596,12 @@ img {
 }
 .form__checkbox-wrapper {
   text-align: center;
+}
+.form__checkbox-wrapper.polisy-err::after {
+  color: #ff0000;
+  content: "プライバシーポリシーへの同意は必須です";
+  top: -10px;
+  position: relative;
 }
 .form input[type=checkbox] {
   transform: scale(1.3);

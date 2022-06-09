@@ -377,14 +377,14 @@
           </div>
 
           <div class="contact__form" data-aos="flip-left">
-            <form action="post" class="form">
-              <div class="form__item">
+            <form action="submit" class="form" id="form">
+              <div class="form__item" id="form-name">
                 <label for="name" class="form__label"
                   >お名前<span class="form__require">必須</span></label
                 >
                 <input type="text" class="form__input" name="name" id="name" />
               </div>
-              <div class="form__item">
+              <div class="form__item" id="form-email">
                 <label for="email" class="form__label"
                   >メールアドレス<span class="form__require">必須</span></label
                 >
@@ -395,7 +395,7 @@
                   id="email"
                 />
               </div>
-              <div class="form__item">
+              <div class="form__item" id="form-contact">
                 <label for="contact-text-area" class="form__label"
                   >お問い合わせ内容<span class="form__require"
                     >必須</span
@@ -403,17 +403,20 @@
                 >
                 <textarea
                   name="contact-text-area"
-                  id="form-text-area"
+                  id="form-textarea"
                   class="form__text-area"
                 ></textarea>
               </div>
-              <div class="form__checkbox-wrapper">
-                <input type="checkbox" class="form__checkbox" />
-                プライバシーポリシーに同意する
+              <div class="form__checkbox-wrapper" id="form-privacy">
+                <div>
+                  <input type="checkbox" class="form__checkbox" id="privacy" />
+                  プライバシーポリシーに同意する
+                </div>
               </div>
               <div class="form__button-wrapper">
                 <div class="contact-button">
                   <input
+                    id="js-submit"
                     type="submit"
                     class="contact-button__link"
                     value="送信する"
